@@ -22,10 +22,10 @@
   top: 50%;
   left: 50%;
   border-radius: 4px;
-  padding: 40px;
+  // padding: 40px;
 
-  width: 528px;
-  height: 581px;
+  // width: 528px;
+  // height: 581px;
   background-color: $color-primary;
 
   transform: translate(-50%, -50%) scale(1);
@@ -38,13 +38,13 @@
 
 .modal-button {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  // top: 8px;
+  // right: 8px;
   border-radius: 50%;
   border: none;
   padding: 0;
-  width: 30px;
-  height: 30px;
+  // width: 30px;
+  // height: 30px;
 
   background-color: transparent;
   cursor: pointer;
@@ -70,7 +70,7 @@
   line-height: 1.15;
   text-align: center;
 
-  margin-bottom: 12px;
+  // margin-bottom: 12px;
 
   color: $color-text-secondary;
 }
@@ -83,8 +83,8 @@ textarea:focus {
 .modal-form__label {
   display: block;
   position: relative;
-  height: 58px;
-  margin-bottom: 10px;
+  // height: 58px;
+  // margin-bottom: 10px;
 
   color: $color-text-secondary;
 
@@ -92,20 +92,20 @@ textarea:focus {
   line-height: 1.16;
   letter-spacing: 0.01em;
 
-  &:nth-child(4) {
-    height: 138px;
-    margin-bottom: 20px;
-  }
+  // &:nth-child(4) {
+  //   height: 138px;
+  //   margin-bottom: 20px;
+  // }
 }
 
 .modal-form__input {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  min-width: 448px;
-  height: 40px;
-  padding: 14px 15px;
-  padding-left: 40px;
-  margin-top: 4px;
+  // min-width: 448px;
+  // height: 40px;
+  // padding: 14px 15px;
+  // padding-left: 40px;
+  // margin-top: 4px;
 
   font-size: 12px;
   resize: none;
@@ -125,8 +125,8 @@ textarea:focus {
   fill: currentColor;
 
   position: absolute;
-  top: 28px;
-  left: 12px;
+  // top: 28px;
+  // left: 12px;
 
   transition: fill 250ms $transition-time;
 
@@ -136,8 +136,8 @@ textarea:focus {
 }
 
 .modal-form__input--large {
-  height: 120px;
-  padding: 12px 16px;
+  // height: 120px;
+  // padding: 12px 16px;
 
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
@@ -145,10 +145,10 @@ textarea:focus {
 }
 
 .modal-form__checkbox-label {
-  @include centeredFlex(flex, center);
+  // @include centeredFlex(flex, center);
 
-  align-items: center;
-  margin-bottom: 30px;
+  // align-items: center;
+  // margin-bottom: 30px;
 
   color: $color-text-primary;
 
@@ -172,18 +172,18 @@ textarea:focus {
 
 .modal-form__checkbox-link {
   color: $color-accent;
-  margin-left: 5px;
+  // margin-left: 5px;
 }
 
 .modal-form__checkbox-icon {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 
   border: 2px solid $color-text-secondary;
   border-radius: 3px;
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
+  // width: 16px;
+  // height: 15px;
+  // margin-right: 8px;
 
   transition: border-color 250ms $transition-time,
     background-color 250ms $transition-time,
@@ -204,11 +204,11 @@ textarea:focus {
   }
 }
 
-.modal-submit {
-  width: 200px;
-  height: 50px;
-}
+// .modal-submit {
+//   width: 200px;
+//   height: 50px;
+// }
 
-.modal-submit-thumb {
-  @include centeredFlex(flex, center);
-}
+// .modal-submit-thumb {
+//   @include centeredFlex(flex, center);
+// }

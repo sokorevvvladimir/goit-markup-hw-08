@@ -1,17 +1,17 @@
-.left-part {
-  margin-right: 70px;
-  width: 231px;
-}
+// .left-part {
+//   margin-right: 70px;
+//   width: 231px;
+// }
 
 .address {
   @extend %list;
 }
 
-.address__item {
-  &:not(:last-child) {
-    margin-bottom: 9px;
-  }
-}
+// .address__item {
+//   &:not(:last-child) {
+//     margin-bottom: 9px;
+//   }
+// }
 
 .address__link {
   @extend %link;

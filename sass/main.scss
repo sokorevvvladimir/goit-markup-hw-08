@@ -16,7 +16,7 @@
 @import "components/our-team";
 @import "components/peculiarities";
 @import "components/portfolio-page";
-@import "components/scope";
+// @import "components/scope";
 @import "components/footer/footer";
 @import "components/footer/left-part";
 @import "components/footer/middle-part";
@@ -54,7 +54,7 @@ p {
 }
 
 .container {
-  width: 1200px;
+  width: 480px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;

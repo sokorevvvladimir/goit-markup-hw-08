@@ -1,10 +1,10 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  &:nth-of-type(3) {
-    padding-top: 0;
-  }
+  // &:nth-of-type(3) {
+  //   padding-top: 0;
+  // }
 
   &:nth-last-child(2) {
     background-color: $color-our-team;
@@ -12,7 +12,7 @@
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   color: $color-text-secondary;
   font-size: 36px;

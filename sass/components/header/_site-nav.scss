@@ -1,26 +1,26 @@
 .site-nav {
   @extend %list;
 
-  display: flex;
+  // display: flex;
 
-  margin-left: 93px;
+  // margin-left: 93px;
 }
 
 .site-nav__item {
   position: relative;
 
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 50px;
+  // }
 }
 
 .site-nav__link {
   @extend %link;
 
-  display: block;
+  // display: block;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
   color: $color-text-secondary;
   transition: color 250ms $transition-time;

@@ -5,14 +5,15 @@
 .peculiarities {
   @extend %list;
 
-  display: flex;
+  // display: flex;
 }
 
 .peculiarities__item {
-  flex-basis: calc(100% / 4 - 22px);
+  display: inline-block;
+  // flex-basis: calc(100% / 4 - 22px);
 
-  &:not(:first-child) {
-    margin-left: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -21,14 +22,17 @@
   align-items: center;
 
   background-color: $color-our-team;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-bottom: 30px;
-  height: 120px;
+  // height: 120px;
   border-radius: 4px;
 }
 
 .peculiarities__subheader {
   margin-bottom: 10px;
 
+  text-align: center;
   color: $color-text-secondary;
   font-size: 14px;
   line-height: 1.14;
