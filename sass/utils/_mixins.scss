@@ -1,0 +1,9 @@
+@mixin headerAndFooterContainers($type) {
+  display: flex;
+  align-items: $type;
+}
+
+@mixin centeredFlex($type, $main-axis) {
+  display: $type;
+  justify-content: $main-axis;
+}

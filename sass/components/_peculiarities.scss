@@ -1,0 +1,37 @@
+.visually-hidden {
+  @extend %visually-hidden;
+}
+
+.peculiarities {
+  @extend %list;
+
+  display: flex;
+}
+
+.peculiarities__item {
+  flex-basis: calc(100% / 4 - 22px);
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.peculiarities-thumb {
+  @include centeredFlex(flex, center);
+  align-items: center;
+
+  background-color: $color-our-team;
+  margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+}
+
+.peculiarities__subheader {
+  margin-bottom: 10px;
+
+  color: $color-text-secondary;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

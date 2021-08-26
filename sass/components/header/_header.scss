@@ -1,0 +1,12 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: flex;
+  @include headerAndFooterContainers(center);
+}
+
+.header__nav {
+  display: flex;
+}

@@ -1,0 +1,11 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $color-secondary;
+}
+
+.footer__container {
+  display: flex;
+  @include headerAndFooterContainers(baseline);
+}

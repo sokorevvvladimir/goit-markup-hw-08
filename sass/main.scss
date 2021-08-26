@@ -1,0 +1,61 @@
+@import "base/normalize";
+@import "base/fonts";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/placeholders";
+@import "components/section";
+@import "components/animations";
+@import "components/buttons";
+@import "components/shared/logo";
+@import "components/header/header";
+@import "components/header/site-nav";
+@import "components/header/contacts";
+@import "components/hero";
+@import "components/modal-window";
+@import "components/our-customers";
+@import "components/our-team";
+@import "components/peculiarities";
+@import "components/portfolio-page";
+@import "components/scope";
+@import "components/footer/footer";
+@import "components/footer/left-part";
+@import "components/footer/middle-part";
+@import "components/footer/footer-form";
+
+body {
+  color: $color-text-primary;
+  background-color: $color-primary;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-inline-start: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
