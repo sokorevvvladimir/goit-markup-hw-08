@@ -12,6 +12,7 @@
 @import "components/header/contacts";
 @import "components/hero";
 @import "components/modal-window";
+@import "components/menu-container";
 @import "components/our-customers";
 @import "components/our-team";
 @import "components/peculiarities";
@@ -54,7 +55,7 @@ p {
 }
 
 .container {
-  width: 480px;
+  min-width: 480px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
