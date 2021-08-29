@@ -4,10 +4,21 @@
 
   background-color: $color-secondary;
 
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
-// .footer__container {
-//   display: flex;
-//   @include headerAndFooterContainers(baseline);
-// }
+.upper-part-for-tablet {
+  @media screen and (min-width: $tablet) {
+    @include headerAndFooterContainers(baseline);
+    justify-content: space-around;
+  }
+}
+
+.footer__container {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    @include headerAndFooterContainers(baseline);
+  }
+}

@@ -1,5 +1,11 @@
 .left-part {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
   // width: 231px;
 }
 

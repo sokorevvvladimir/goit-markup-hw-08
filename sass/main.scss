@@ -1,5 +1,6 @@
 @import "base/normalize";
 @import "base/fonts";
+@import "utils/breakpoints";
 @import "utils/variables";
 @import "utils/mixins";
 @import "utils/placeholders";
@@ -17,7 +18,7 @@
 @import "components/our-team";
 @import "components/peculiarities";
 @import "components/portfolio-page";
-// @import "components/scope";
+@import "components/scope";
 @import "components/footer/footer";
 @import "components/footer/left-part";
 @import "components/footer/middle-part";
@@ -55,8 +56,19 @@ p {
 }
 
 .container {
-  min-width: 480px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }

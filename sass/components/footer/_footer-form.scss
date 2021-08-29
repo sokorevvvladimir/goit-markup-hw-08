@@ -1,3 +1,9 @@
+.footer-form {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+}
+
 .footer-form__title {
   margin-bottom: 20px;
 
@@ -14,15 +20,27 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
   color: $color-primary;
-  min-width: 450px;
+  width: 450px;
   font-size: 16px;
   line-height: 1.25;
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+  }
 }
 
-// .footer-form__content {
-//   @include centeredFlex(flex, space-between);
-// }
+.footer-form__content {
+  @media screen and (min-width: $desktop) {
+    @include centeredFlex(flex, space-between);
+  }
+}

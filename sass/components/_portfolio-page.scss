@@ -5,34 +5,64 @@
 .portfolio-btn {
   @extend %list;
 
-  // display: flex;
-  // justify-content: center;
-  // margin-bottom: 34px;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
-// .portfolio-btn__item:not(:last-child) {
-//   margin-right: 8px;
-// }
+.portfolio-btn__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &:nth-child(-n + 3) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+}
 
 .portfolio {
   @extend %list;
 
-  // display: flex;
-  // flex-wrap: wrap;
-  // margin-top: calc(-1 * #{$item-gap});
-  // margin-left: calc(-1 * #{$item-gap});
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * #{$item-gap});
+    margin-left: calc(-1 * #{$item-gap});
+  }
 }
 
 .portfolio__item {
-  // flex-basis: calc((100% - 90px) / 3);
-  // margin-top: $item-gap;
-  // margin-left: $item-gap;
+  @media screen and (max-width: 767px) {
+    margin-bottom: $item-gap;
+  }
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-top: $item-gap;
+    margin-left: $item-gap;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .product__link {
   @extend %link;
 
-  // display: block;
+  display: block;
 
   transition: box-shadow 250ms $transition-time;
 
@@ -41,6 +71,11 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+
+  // @media screen and (min-width: $tablet) {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
 }
 
 .product__thumb {
@@ -49,7 +84,7 @@
 }
 
 .product__label {
-  // padding: 20px 24px;
+  padding: 20px 24px;
   background: $color-primary;
   border: 1px solid #eeeeee;
   border-top: transparent;
@@ -80,7 +115,7 @@
 
   background-color: $color-accent;
   opacity: 0.9;
-  // padding: 63px 24px;
+  padding: 77px 24px;
 
   transform: translatey(100%);
 
@@ -89,6 +124,14 @@
   .product__link:hover &,
   .product__link:focus & {
     transform: translatey(0);
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 63px 24px;
   }
 }
 

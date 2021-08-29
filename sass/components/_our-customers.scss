@@ -1,16 +1,26 @@
 .customers {
   @extend %list;
 
-  @include centeredFlex(flex, space-between);
-  flex-wrap: wrap;
-  flex-basis: calc((100% - 60px) / 2);
-  margin-top: calc(-1 * #{$item-gap});
-  margin-left: calc(-1 * #{$item-gap});
+  @media screen and (max-width: 1199px) {
+    @include centeredFlex(flex, center);
+    flex-wrap: wrap;
+
+    margin-top: calc(-1 * #{$item-gap});
+    margin-left: calc(-1 * #{$item-gap});
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: calc((100% - 30px) / 6);
+  }
 }
 
 .customers__item {
-  margin-top: $item-gap;
-  margin-left: $item-gap;
+  @media screen and (max-width: 1199px) {
+    margin-top: $item-gap;
+    margin-left: $item-gap;
+  }
 }
 
 .customers__thumb {
@@ -29,6 +39,14 @@
   &:hover,
   &:focus {
     border-color: $color-accent;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 170px;
   }
 }
 

@@ -26,8 +26,7 @@
 
   width: 450px;
   height: 609px;
-  // width: 528px;
-  // height: 581px;
+
   background-color: $color-primary;
 
   transform: translate(-50%, -50%) scale(1);
@@ -35,6 +34,11 @@
 
   .backdrop--is-hidden & {
     transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -69,12 +73,16 @@
 
 .modal__header {
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
 
   margin-bottom: 12px;
 
   color: $color-text-secondary;
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.15;
+  }
 }
 
 input:focus,
@@ -107,8 +115,7 @@ textarea:focus {
 .modal-form__input {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  min-width: 370px;
-  // min-width: 448px;
+  width: 370px;
   height: 40px;
   padding: 11px 12px;
   padding-left: 40px;
@@ -125,6 +132,10 @@ textarea:focus {
 
   &:focus {
     border-color: $color-accent;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 448px;
   }
 }
 
@@ -161,8 +172,11 @@ textarea:focus {
 
   font-size: 12px;
   line-height: 1.16;
-  // font-size: 14px;
-  // line-height: 1.71;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form__checkbox-input {
