@@ -33,6 +33,10 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: $mobile) {
+    width: 480px;
+  }
 }
 
 ul {
