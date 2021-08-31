@@ -148,9 +148,36 @@
             <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="scope list">
-                    <li class="scope__item"><div class="scope__thumb"><p>Десктопные приложения</p></div><img src="./images/desktop-pc.png" alt="десктопный компьютер" width="370"></li>
-                    <li class="scope__item"><div class="scope__thumb"><p>Мобильные приложения</p></div><img src="./images/mobile-phone.png" alt="мобильный телефон" width="370"></li>
-                    <li class="scope__item"><div class="scope__thumb"><p>Дизайнерские решения</p></div><img src="./images/tablet.png" alt="планшет" width="370"></li>
+                    <li class="scope__item">
+                        <div class="scope__thumb">
+                            <p>Десктопные приложения</p>
+                        </div>
+                        <picture>
+                            <source srcset="./images/desktop-scope-webp@1x.webp 1x, ./images/desktop-scope-webp@2x.webp 2x, ./images/desktop-scope-webp@3x.webp 3x" type="image/webp" media="(min-width: 1200px)">
+                            <source srcset="./images/desktop-scope-img@1x.jpg 1x, ./images/desktop-scope-img@2x.jpg 2x, ./images/desktop-scope-img@3x.jpg 3x" media="(min-width: 1200px)">
+                            <img src="./images/desktop-scope-img@1x.jpg 1x" alt="десктопный компьютер">
+                        </picture>
+                    </li>
+                    <li class="scope__item">
+                        <div class="scope__thumb">
+                            <p>Мобильные приложения</p>
+                        </div>
+                        <picture>
+                            <source srcset="./images/desktop-mobile-phone-webp@1x.webp 1x, ./images/desktop-mobile-phone-webp@2x.webp 2x, ./images/desktop-mobile-phone-webp@3x.webp 3x" type="image/webp" media="(min-width: 1200px)">
+                            <source srcset="./images/desktop-mobile-phone-img@1x.jpg 1x, ./images/desktop-mobile-phone-img@2x.jpg 2x, ./images/desktop-mobile-phone-img@3x.jpg 3x" media="(min-width: 1200px)">
+                            <img src="./images/desktop-mobile-phone-img@1x.jpg 1x" alt="мобильный телефон">
+                        </picture>
+                    </li>
+                    <li class="scope__item">
+                        <div class="scope__thumb">
+                            <p>Дизайнерские решения</p>
+                        </div>
+                        <picture>
+                            <source srcset="./images/desktop-tablet-webp@1x.webp 1x, ./images/desktop-tablet-webp@2x.webp 2x, ./images/desktop-tablet-webp@3x.webp 3x" type="image/webp" media="(min-width: 1200px)">
+                            <source srcset="./images/desktop-tablet-img@1x.jpg 1x, ./images/desktop-tablet-img@2x.jpg 2x, ./images/desktop-tablet-img@3x.jpg 3x" media="(min-width: 1200px)">
+                            <img src="./images/desktop-tablet-img@1x.jpg 1x" alt="планшет">
+                        </picture>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -163,8 +190,13 @@
                 <ul class="team list">
                     <li class="team__item">
                         <picture>
-                            <source srcset="./images/mobile-product-designer-webp@1x.webp 1x, ./images/mobile-product-designer-webp@2x.webp 2x, ./images/mobile-product-designer-webp@3x.webp 3x" type="image/webp">
-                            <img srcset="./images/mobile-product-designer-img@1x.jpg 1x, ./images/mobile-product-designer-img@2x.jpg 2x, ./images/mobile-product-designer-img@3x.jpg 3x" src="./images/mobile-product-designer-img@1x.jpg 1x" alt="Игорь Демьяненко Product Designer" width="450">
+                            <source srcset="./images/desktop-product-designer-webp@1x.webp 1x, ./images/desktop-product-designer-webp@2x.webp 2x, ./images/desktop-product-designer-webp@3x.webp 3x" type="image/webp" media="(min-width: 1200px)">
+                            <source srcset="./images/desktop-product-designer-img@1x.jpg 1x, ./images/desktop-product-designer-img@2x.jpg 2x, ./images/desktop-product-designer-img@3x.jpg 3x" media="(min-width: 1200px)">
+                            <source srcset="./images/tablet-product-designer-webp@1x.webp 1x, ./images/tablet-product-designer-webp@2x.webp 2x, ./images/tablet-product-designer-webp@3x.webp 3x" type="image/webp" media="(min-width: 768px)">
+                            <source srcset="./images/tablet-product-designer-img@1x.jpg 1x, ./images/tablet-product-designer-img@2x.jpg 2x, ./images/tablet-product-designer-img@3x.jpg 3x" media="(min-width: 768px)">
+                            <source srcset="./images/mobile-product-designer-webp@1x.webp 1x, ./images/mobile-product-designer-webp@2x.webp 2x, ./images/mobile-product-designer-webp@3x.webp 3x" type="image/webp" media="(max-width: 767px)">
+                            <source srcset="./images/mobile-product-designer-img@1x.jpg 1x, ./images/mobile-product-designer-img@2x.jpg 2x, ./images/mobile-product-designer-img@3x.jpg 3x" media="(max-width: 767px)">
+                            <img src="./images/mobile-product-designer-img@1x.jpg 1x" alt="Игорь Демьяненко Product Designer">
                         </picture>
                         <div class="team__card">
                             <h3 class="team__header">Игорь Демьяненко</h3>
@@ -203,8 +235,13 @@
                     </li>
                     <li class="team__item"> 
                         <picture>
-                            <source srcset="./images/mobile-frontend-developer-webp@1x.webp 1x, ./images/mobile-frontend-developer-webp@2x.webp 2x, ./images/mobile-frontend-developer-webp@3x.webp 3x" type="image/webp">
-                            <img srcset="./images/mobile-frontend-developer-img@1x.jpg 1x, ./images/mobile-frontend-developer-img@2x.jpg 2x, ./images/mobile-frontend-developer-img@3x.jpg 3x" src="./images/mobile-frontend-developer-img@1x.jpg 1x" alt="Ольга Репина Frontend Developer" width="450">
+                            <source srcset="./images/desktop-frontend-developer-webp@1x.webp 1x, ./images/desktop-frontend-developer-webp@2x.webp 2x, ./images/desktop-frontend-developer-webp@3x.webp 3x" type="image/webp" media="(min-width: 1200px)">
+                            <source srcset="./images/desktop-frontend-developer-img@1x.jpg 1x, ./images/desktop-frontend-developer-img@2x.jpg 2x, ./images/desktop-frontend-developer-img@3x.jpg 3x" media="(min-width: 1200px)">
+                            <source srcset="./images/tablet-frontend-developer-webp@1x.webp 1x, ./images/tablet-frontend-developer-webp@2x.webp 2x, ./images/tablet-frontend-developer-webp@3x.webp 3x" type="image/webp" media="(min-width: 768px)">
+                            <source srcset="./images/tablet-frontend-developer-img@1x.jpg 1x, ./images/tablet-frontend-developer-img@2x.jpg 2x, ./images/tablet-frontend-developer-img@3x.jpg 3x" media="(min-width: 768px)">
+                            <source srcset="./images/mobile-frontend-developer-webp@1x.webp 1x, ./images/mobile-frontend-developer-webp@2x.webp 2x, ./images/mobile-frontend-developer-webp@3x.webp 3x" type="image/webp" media="(max-width: 767px)">
+                            <source srcset="./images/mobile-frontend-developer-img@1x.jpg 1x, ./images/mobile-frontend-developer-img@2x.jpg 2x, ./images/mobile-frontend-developer-img@3x.jpg 3x" media="(max-width: 767px)">
+                            <img src="./images/mobile-frontend-developer-img@1x.jpg 1x" alt="Ольга Репина Frontend Developer">
                         </picture>
                         <div class="team__card">
                             <h3 class="team__header">Ольга Репина</h3>
@@ -243,8 +280,13 @@
                     </li>
                     <li class="team__item">
                         <picture>
-                            <source srcset="./images/mobile-marketing-webp@1x.webp 1x, ./images/mobile-marketing-webp@2x.webp 2x, ./images/mobile-marketing-webp@3x.webp 3x" type="image/webp">
-                            <img srcset="./images/mobile-marketing-img@1x.jpg 1x, ./images/mobile-marketing-img@2x.jpg 2x, ./images/mobile-marketing-img@3x.jpg 3x" src="./images/mobile-marketing-img@1x.jpg 1x" alt="Николай Тарасов Marketing" width="450">
+                            <source srcset="./images/desktop-marketing-webp@1x.webp 1x, ./images/desktop-marketing-webp@2x.webp 2x, ./images/desktop-marketing-webp@3x.webp 3x" type="image/webp" media="(min-width: 1200px)">
+                            <source srcset="./images/desktop-marketing-img@1x.jpg 1x, ./images/desktop-marketing-img@2x.jpg 2x, ./images/desktop-marketing-img@3x.jpg 3x" media="(min-width: 1200px)">
+                            <source srcset="./images/tablet-marketing-webp@1x.webp 1x, ./images/tablet-marketing-webp@2x.webp 2x, ./images/tablet-marketing-webp@3x.webp 3x" type="image/webp" media="(min-width: 768px)">
+                            <source srcset="./images/tablet-marketing-img@1x.jpg 1x, ./images/tablet-marketing-img@2x.jpg 2x, ./images/tablet-marketing-img@3x.jpg 3x" media="(min-width: 768px)">
+                            <source srcset="./images/mobile-marketing-webp@1x.webp 1x, ./images/mobile-marketing-webp@2x.webp 2x, ./images/mobile-marketing-webp@3x.webp 3x" type="image/webp" media="(max-width: 767px)">
+                            <source srcset="./images/mobile-marketing-img@1x.jpg 1x, ./images/mobile-marketing-img@2x.jpg 2x, ./images/mobile-marketing-img@3x.jpg 3x" media="(max-width: 767px)">
+                            <img src="./images/mobile-marketing-img@1x.jpg 1x" alt="Николай Тарасов Marketing">
                         </picture>
                         <div class="team__card">
                             <h3 class="team__header">Николай Тарасов</h3>
@@ -283,8 +325,13 @@
                     </li>
                     <li class="team__item">
                         <picture>
-                            <source srcset="./images/mobile-ui-designer-webp@1x.webp 1x, ./images/mobile-ui-designer-webp@2x.webp 2x, ./images/mobile-ui-designer-webp@3x.webp 3x" type="image/webp">
-                            <img srcset="./images/mobile-ui-designer-img@1x.jpg 1x, ./images/mobile-ui-designer-img@2x.jpg 2x, ./images/mobile-ui-designer-img@3x.jpg 3x" src="./images/mobile-ui-designer-img@1x.jpg 1x" alt="Михаил Ермаков UI Designer" width="450">
+                            <source srcset="./images/desktop-ui-designer-webp@1x.webp 1x, ./images/desktop-ui-designer-webp@2x.webp 2x, ./images/desktop-ui-designer-webp@3x.webp 3x" type="image/webp" media="(min-width: 1200px)">
+                            <source srcset="./images/desktop-ui-designer-img@1x.jpg 1x, ./images/desktop-ui-designer-img@2x.jpg 2x, ./images/desktop-ui-designer-img@3x.jpg 3x" media="(min-width: 1200px)">
+                            <source srcset="./images/tablet-ui-designer-webp@1x.webp 1x, ./images/tablet-ui-designer-webp@2x.webp 2x, ./images/tablet-ui-designer-webp@3x.webp 3x" type="image/webp" media="(min-width: 768px)">
+                            <source srcset="./images/tablet-ui-designer-img@1x.jpg 1x, ./images/tablet-ui-designer-img@2x.jpg 2x, ./images/tablet-ui-designer-img@3x.jpg 3x" media="(min-width: 768px)">
+                            <source srcset="./images/mobile-ui-designer-webp@1x.webp 1x, ./images/mobile-ui-designer-webp@2x.webp 2x, ./images/mobile-ui-designer-webp@3x.webp 3x" type="image/webp" media="(max-width: 767px)">
+                            <source srcset="./images/mobile-ui-designer-img@1x.jpg 1x, ./images/mobile-ui-designer-img@2x.jpg 2x, ./images/mobile-ui-designer-img@3x.jpg 3x" media="(max-width: 767px)">
+                            <img src="./images/mobile-ui-designer-img@1x.jpg 1x" alt="Михаил Ермаков UI Designer">
                         </picture>
                         <div class="team__card">
                             <h3 class="team__header">Михаил Ермаков</h3>

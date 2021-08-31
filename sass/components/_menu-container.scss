@@ -10,10 +10,14 @@
   padding-left: 40px;
   z-index: 999;
 
-  transform: translateX(100%);
+  transform: translateX(150%);
   transition: transform 250ms $transition-time;
 
   background-color: $color-primary;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .menu-container.is-open {
