@@ -60,7 +60,6 @@
 
 .mobile-menu-nav {
   @extend %list;
-  margin-bottom: 302px;
 }
 
 .mobile-menu-nav__item:not(:last-child) {
@@ -113,7 +112,9 @@
 }
 
 .mobile-menu-social {
+  @extend %list;
   margin-top: 64px;
+  display: flex;
 }
 
 .mobile-menu-social__link {
@@ -124,11 +125,24 @@
   color: $color-accent;
 }
 
-.mobile-menu-social__divider {
-  font-size: 22px;
-  line-height: 1.22;
-  color: rgba(33, 33, 33, 0.2);
-
+.mobile-menu-social__item:not(:last-child)::after {
+  content: "";
+  width: 22px;
+  height: 0px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.mobile-menu-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobile-menu-down-wrapper {
+  display: flex;
+  flex-direction: column;
 }

@@ -10,9 +10,17 @@
 }
 
 .upper-part-for-tablet {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
   @media screen and (min-width: $tablet) {
     @include headerAndFooterContainers(baseline);
     justify-content: space-around;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
   }
 }
 

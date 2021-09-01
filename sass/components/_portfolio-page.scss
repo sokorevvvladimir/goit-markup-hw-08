@@ -44,8 +44,10 @@
 }
 
 .portfolio__item {
-  @media screen and (max-width: 767px) {
-    margin-bottom: $item-gap;
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: $item-gap;
+    }
   }
 
   @media screen and (min-width: $tablet) {

@@ -1,14 +1,3 @@
-.middle-part {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-right: 93px;
-  }
-  // width: 206px;
-}
-
 .middle-part__title {
   margin-bottom: 20px;
 
